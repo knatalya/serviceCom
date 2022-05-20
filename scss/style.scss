@@ -1,3 +1,4 @@
+// Fonts
 @font-face {
   font-family: 'GolosTextWebBold';
   src:
@@ -23,13 +24,30 @@
   font-style: normal;
 }
 body {
+  margin: 0 2rem;
   width: 100vw;
   height: 100vh;
 }
+body > div {
+  padding: 0 2rem;
+  margin-top: 2rem;
+}
 footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
   background-color: #2A2A2F;
+  padding: 0 2rem;
   color: white;
 }
+header {
+  height: 5rem;
+  padding: 0.25rem 2rem;
+  box-shadow: 0 0 10px  rgba(122,122,122,0.5);
+}
+
 .gy-normal {
   margin-bottom: 4rem;
 }
@@ -46,12 +64,14 @@ footer {
 }
 .message_mistake_pass {
   right: -12rem;
+  display: none;
 }
 .message_mistake_mail {
   right: -11.2rem;
 }
 // Bootstrap
 $primary: #FF7315;
+$info: #00CC66;
 $font-family-base: "GolosTextWebRegular";
 $font-family-sans-serif: "GolosTextWebRegular";
 $form-feedback-icon-invalid: url("data:image/svg+xml,<svg/>");
@@ -68,6 +88,13 @@ input:invalid {
 h4, h6 {
   font-family: 'GolosTextWebBold' !important;
 }
-input:focus {
+input:hover {
   cursor: pointer;
+}
+.btn-active {
+  background-color: #F4F5F7;
+  border-radius: 0.5rem;
+  a {
+    color: #00C261 !important;
+  }
 }
