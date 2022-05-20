@@ -1,6 +1,69 @@
-
+@font-face {
+  font-family: 'GolosTextWebBold';
+  src:
+          url('/fonts/PT/PT/Golos-Text/Golos-Text_Bold.woff2') format('woff2'),
+          url('/fonts/PT/PT/Golos-Text/Golos-Text_Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GolosTextWebDemiBold';
+  src:
+          url('/fonts/PT/PT/Golos-Text/Golos-Text_DemiBold.woff2') format('woff2'),
+          url('/fonts/PT/PT/Golos-Text/Golos-Text_DemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GolosTextWebRegular';
+  src:
+          url('/fonts/PT/PT/Golos-Text/Golos-Text_Regular.woff2') format('woff2'),
+          url('/fonts/PT/PT/Golos-Text/Golos-Text_Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
 footer {
   background-color: #2A2A2F;
   color: white;
 }
+.gy-normal {
+  margin-bottom: 4rem;
+}
+.eyes {
+  right: 0.5rem;
+  top: 0.3rem;
+}
+.message_mistake {
+  color: white;
+  background-color: #E53935;
+  padding: 0.25rem 0.5rem;
+  top: 0.15rem;
+  border-radius: 4px;
+}
+.message_mistake_pass {
+  right: -12rem;
+}
+.message_mistake_mail {
+  right: -11.25rem;
+}
+// Bootstrap
+$primary: #FF7315;
+$font-family-base: "GolosTextWebRegular";
+$font-family-sans-serif: "GolosTextWebRegular";
 @import "../node_modules/bootstrap/scss/bootstrap";
+.color_white {
+  color: white !important;
+}
+input {
+  font-family: 'GolosTextWebDemiBold' !important;
+}
+h4, h6 {
+  font-family: 'GolosTextWebBold' !important;
+}
+input:focus {
+  cursor: pointer;
+}
