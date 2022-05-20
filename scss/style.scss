@@ -48,18 +48,22 @@ footer {
   right: -12rem;
 }
 .message_mistake_mail {
-  right: -11.25rem;
+  right: -11.2rem;
 }
 // Bootstrap
 $primary: #FF7315;
 $font-family-base: "GolosTextWebRegular";
 $font-family-sans-serif: "GolosTextWebRegular";
+$form-feedback-icon-invalid: url("data:image/svg+xml,<svg/>");
 @import "../node_modules/bootstrap/scss/bootstrap";
 .color_white {
   color: white !important;
 }
 input {
   font-family: 'GolosTextWebDemiBold' !important;
+}
+input:invalid {
+  color: #E53935;
 }
 h4, h6 {
   font-family: 'GolosTextWebBold' !important;
