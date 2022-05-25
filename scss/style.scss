@@ -8,10 +8,28 @@ body {
   height: 100vh;
 }
 
+.bg-grey {
+  background-color: #F4F5F7;
+}
+th {
+  color: #A1A8B5;
+  font-family: "GolosTextWebRegular", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  *:hover {
+    color: #6B778C;
+  }
+}
+table {
+  border: 1px solid black;
+  border-radius: 8px;
+}
 header {
   height: 5rem;
   padding: 0.25rem 2rem;
   box-shadow: 0 0 10px rgba(122, 122, 122, 0.5);
+  background-color: white;
 }
 
 body > div {
@@ -89,3 +107,4 @@ h4, h6 {
     color: #00C261 !important;
   }
 }
+// Table
