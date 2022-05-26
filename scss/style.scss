@@ -6,7 +6,9 @@ body {
   margin: 0 2rem;
   width: 100vw;
 }
-
+body.bg-grey {
+  height: 100vh;
+}
 .bg-grey {
   background-color: #F4F5F7;
 }
@@ -31,11 +33,14 @@ header {
   background-color: white;
 }
 
-body > div {
+body div.container-sm {
   padding: 0 2rem;
   margin-top: 10rem;
 }
-
+body div.co {
+  padding: 0 2rem;
+  margin-top: 2rem;
+}
 footer {
   position: absolute;
   bottom: 0;
