@@ -1,7 +1,6 @@
 @import "../fonts/PT/Golos-Text/Golos-Text_Bold.css";
 @import "../fonts/PT/Golos-Text/Golos-Text_DemiBold.css";
 @import "../fonts/PT/Golos-Text/Golos-Text_Regular.css";
-
 body {
   margin: 0 2rem;
   width: 100vw;
@@ -18,19 +17,40 @@ th {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  *:hover {
-    color: #6B778C;
-  }
+  cursor: pointer;
+}
+th:hover {
+  color: #6B778C;
 }
 table {
   border: 1px solid black;
   border-radius: 8px;
+  thead, tbody {
+    margin: 2rem 2rem;
+  }
+  td {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 header {
   height: 5rem;
   padding: 0.25rem 2rem;
   box-shadow: 0 0 10px rgba(122, 122, 122, 0.5);
   background-color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  .btn:hover {
+    color: #00c261 !important;
+  }
+  svg {
+    fill: #A5ADBA;
+  }
+  svg:hover {
+    fill: #00c261;
+  }
 }
 
 body div.container-sm {
@@ -50,6 +70,9 @@ footer {
   background-color: #2A2A2F;
   padding: 0 2rem;
   color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .gy-normal {
@@ -81,6 +104,7 @@ footer {
 // Bootstrap
 $primary: #FF7315;
 $info: #00CC66;
+$light: white;
 $font-family-base: "GolosTextWebRegular";
 $font-family-sans-serif: "GolosTextWebRegular";
 $form-feedback-icon-invalid: url("data:image/svg+xml,<svg/>");
@@ -111,4 +135,4 @@ h4, h6 {
     color: #00C261 !important;
   }
 }
-// Table
+
