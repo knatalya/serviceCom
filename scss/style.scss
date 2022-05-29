@@ -22,16 +22,29 @@ th {
 th:hover {
   color: #6B778C;
 }
-table {
-  border: 1px solid black;
+.table-container {
+  border: 1px solid #DFE1E6;
   border-radius: 8px;
-  thead, tbody {
-    margin: 2rem 2rem;
+}
+table {
+  margin: 1rem 2rem;
+  tr {
+    border-bottom: 1px solid #DFE1E6;
+    height: 5rem;
+  }
+  thead > tr {
+    height: 4rem;
   }
   td {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+  }
+  td, th {
+    padding-left: 3rem;
+  }
+  td:first-child, th:first-child {
+    padding-left: 0;
   }
 }
 header {
