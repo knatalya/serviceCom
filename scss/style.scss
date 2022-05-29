@@ -1,6 +1,10 @@
 @import "../fonts/PT/Golos-Text/Golos-Text_Bold.css";
 @import "../fonts/PT/Golos-Text/Golos-Text_DemiBold.css";
 @import "../fonts/PT/Golos-Text/Golos-Text_Regular.css";
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
 body {
   margin: 0 2rem;
   width: 100vw;
@@ -28,6 +32,9 @@ th:hover {
 }
 table {
   margin: 1rem 2rem;
+  max-height: 300px;
+  height: 300px;
+  overflow-y: scroll;
   tr {
     border-bottom: 1px solid #DFE1E6;
     height: 5rem;
@@ -148,4 +155,71 @@ h4, h6 {
     color: #00C261 !important;
   }
 }
-
+.col-date {
+  width: toRem(89);
+}
+.col-num{
+  width: toRem(88);
+}
+.col-service {
+  width: toRem(152);
+}
+.col-status{
+  width: toRem(220);
+}
+.col-author {
+  width: toRem(176);
+}
+.col-desk {
+  width: toRem(528);
+}
+.col-emer {
+  width: toRem(176);
+}
+.col-time {
+  width: toRem(200);
+}
+.col-send {
+  width: toRem(200);
+}
+.description, .success-time {
+  color: #009E4F;
+}
+.description:hover {
+  text-decoration-line: underline;
+}
+.danger-time {
+  color: #DE350B;
+}
+.waiting {
+  color: #DB6900;
+  background: #FFE7D0;
+  border-radius: 4px;
+}
+.working {
+  color: #0052CC;
+  background: #DEEBFF;
+  border-radius: 4px;
+}
+.no-app {
+  color: #97A0AF;
+  background: #DFE1E6;
+  border-radius: 4px;
+}
+.yes-app {
+  color: #009E4F;
+  background: #CCF5E0;
+  border-radius: 4px;
+}
+.point-green {
+  fill: #36B37E;
+}
+.point-orange {
+  fill: #FF8515;
+}
+.point-red {
+  fill: #FF3F15;
+}
+.point {
+  fill: #C1C7D0;
+}

@@ -47,15 +47,15 @@
             <table>
                 <thead>
                 <tr>
-                    <th style="width: 89px">Дата создания</th>
-                    <th style="width: 88px">Номер</th>
-                    <th style="width: 152px">Услуга</th>
-                    <th style="width: 200px">Статус</th>
-                    <th style="width: 176px">Автор</th>
-                    <th style="width: 528px">Описание</th>
-                    <th style="width: 176px">Срочность</th>
-                    <th style="width: 174px">Срок</th>
-                    <th  class="text-end" style="width: 200px">
+                    <th class="col-date">Дата создания</th>
+                    <th class="col-num">Номер</th>
+                    <th class="col-service">Услуга</th>
+                    <th class="col-status">Статус</th>
+                    <th class="col-author">Автор</th>
+                    <th class="col-desk">Описание</th>
+                    <th class="col-emer">Срочность</th>
+                    <th class="col-time">Срок</th>
+                    <th  class="text-end col-send">
                         <img src="images/list.svg" alt="Список функций">
                     </th>
                 </tr>
@@ -66,15 +66,33 @@
                     <td>15754</td>
                     <td>Поддержка пользователей</td>
                     <td>
-                        <div>
+                        <div class="d-inline-block waiting p-1">
                             <img src="images/waiting.svg" alt="Ожидание">
-                            <span>Ожидание пользователей</span>
+                            <span>Ожидание пользов.</span>
                         </div>
                     </td>
                     <td>Александр Долгов</td>
-                    <td style="width: 150px">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td></td>
-                    <td class="">Просрочена</td>
+                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                    <td>
+                        <div>
+                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                        </div>
+                    </td>
+                    <td class="danger-time">Просрочена</td>
                     <td>
                         <div class="d-flex justify-content-end align-items-center pe-5">
                             <img src="images/send.svg" alt="Отправить">
@@ -86,15 +104,33 @@
                     <td>15754</td>
                     <td>Поддержка пользователей</td>
                     <td>
-                        <div>
-                            <img src="images/waiting.svg" alt="Ожидание">
-                            <span>Ожидание пользователей</span>
+                        <div class="d-inline-block working p-1">
+                            <img src="images/working.svg" alt="Ожидание">
+                            <span>В работе</span>
                         </div>
                     </td>
                     <td>Александр Долгов</td>
-                    <td style="width: 150px">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td></td>
-                    <td class="">Просрочена</td>
+                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                    <td>
+                        <div>
+                            <svg class="me-2 point-green" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                        </div>
+                    </td>
+                    <td class="success-time">Выполнена в срок</td>
                     <td>
                         <div class="d-flex justify-content-end align-items-center pe-5">
                             <img src="images/send.svg" alt="Отправить">
@@ -106,15 +142,33 @@
                     <td>15754</td>
                     <td>Поддержка пользователей</td>
                     <td>
-                        <div>
+                        <div class="d-inline-block waiting p-1">
                             <img src="images/waiting.svg" alt="Ожидание">
-                            <span>Ожидание пользователей</span>
+                            <span>Ожидание пользов.</span>
                         </div>
                     </td>
                     <td>Александр Долгов</td>
-                    <td style="width: 150px">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td></td>
-                    <td class="">Просрочена</td>
+                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                    <td>
+                        <div>
+                            <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                        </div>
+                    </td>
+                    <td class="danger-time">Просрочена</td>
                     <td>
                         <div class="d-flex justify-content-end align-items-center pe-5">
                             <img src="images/send.svg" alt="Отправить">
@@ -126,15 +180,33 @@
                     <td>15754</td>
                     <td>Поддержка пользователей</td>
                     <td>
-                        <div>
+                        <div class="d-inline-block waiting p-1">
                             <img src="images/waiting.svg" alt="Ожидание">
                             <span>Зарегистрировано</span>
                         </div>
                     </td>
                     <td>Александр Долгов</td>
-                    <td>В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td></td>
-                    <td class="">До 15.10.2019</td>
+                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                    <td>
+                        <div>
+                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                        </div>
+                    </td>
+                    <td>До 15.10.2019</td>
                     <td>
                         <div class="d-flex justify-content-end align-items-center pe-5">
                             <img src="images/send.svg" alt="Отправить">
@@ -146,15 +218,33 @@
                     <td>15754</td>
                     <td>Поддержка пользователей</td>
                     <td>
-                        <div>
-                            <img src="images/waiting.svg" alt="Ожидание">
-                            <span>Зарегистрировано</span>
+                        <div  class="d-inline-block yes-app p-1">
+                            <img src="images/yes.svg" alt="Ожидание">
+                            <span>Выполнено</span>
                         </div>
                     </td>
                     <td>Александр Долгов</td>
-                    <td>В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td></td>
-                    <td class="">До 15.10.2019</td>
+                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                    <td>
+                        <div>
+                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                        </div>
+                    </td>
+                    <td>До 15.10.2019</td>
                     <td>
                         <div class="d-flex justify-content-end align-items-center pe-5">
                             <img src="images/send.svg" alt="Отправить">
@@ -166,14 +256,32 @@
                     <td>15754</td>
                     <td>Поддержка пользователей</td>
                     <td>
-                        <div>
+                        <div class="d-inline-block no-app p-1">
                             <img src="images/no.svg" alt="Ожидание">
                             <span>Отклонено</span>
                         </div>
                     </td>
                     <td>Александр Долгов</td>
-                    <td>В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td></td>
+                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                    <td>
+                        <div>
+                            <svg class="me-2 point-green" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                        </div>
+                    </td>
                     <td class="">До 15.10.2019</td>
                     <td>
                         <div class="d-flex justify-content-end align-items-center pe-5">
@@ -186,14 +294,32 @@
                     <td>15754</td>
                     <td>Поддержка пользователей</td>
                     <td>
-                        <div>
+                        <div class="d-inline-block waiting p-1">
                             <img src="images/waiting.svg" alt="Ожидание">
                             <span>Ожидание внешних</span>
                         </div>
                     </td>
                     <td>Александр Долгов</td>
-                    <td>В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td></td>
+                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                    <td>
+                        <div>
+                            <svg class="me-2 point-green" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                        </div>
+                    </td>
                     <td class="">До 15.10.2019</td>
                     <td>
                         <div class="d-flex justify-content-end align-items-center pe-5">
