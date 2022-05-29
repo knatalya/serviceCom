@@ -31,10 +31,6 @@ th:hover {
   border-radius: 8px;
 }
 table {
-  margin: 1rem 2rem;
-  max-height: 300px;
-  height: 300px;
-  overflow-y: scroll;
   tr {
     border-bottom: 1px solid #DFE1E6;
     height: 5rem;
@@ -48,11 +44,41 @@ table {
     line-height: 20px;
   }
   td, th {
-    padding-left: 3rem;
+    padding-left: 2rem;
   }
   td:first-child, th:first-child {
     padding-left: 0;
   }
+}
+.scroll-table-body {
+  height: 600px;
+  overflow-x: auto;
+}
+.scroll-table table {
+  width:96.5%;
+  table-layout: fixed;
+}
+.table-tbody {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+.table-thead {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+/* Стили для скролла */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #DFE1E6;
+  border-radius: 50px;
+  border: 3px solid  #DFE1E6;
 }
 header {
   height: 5rem;
@@ -165,22 +191,22 @@ h4, h6 {
   width: toRem(152);
 }
 .col-status{
-  width: toRem(220);
+  width: toRem(200);
 }
 .col-author {
-  width: toRem(176);
+  width: toRem(180);
 }
 .col-desk {
   width: toRem(528);
 }
 .col-emer {
-  width: toRem(176);
+  width: toRem(150);
 }
 .col-time {
-  width: toRem(200);
+  width: toRem(180);
 }
 .col-send {
-  width: toRem(200);
+  width: toRem(120);
 }
 .description, .success-time {
   color: #009E4F;

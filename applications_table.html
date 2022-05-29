@@ -43,8 +43,8 @@
                 </button>
             </div>
         </div>
-        <div class="table-container bg-white mt-3">
-            <table>
+        <div class="table-container bg-white mt-3 scroll-table">
+            <table class="table-thead">
                 <thead>
                 <tr>
                     <th class="col-date">Дата создания</th>
@@ -60,275 +60,393 @@
                     </th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>20.09.2019</td>
-                    <td>15754</td>
-                    <td>Поддержка пользователей</td>
-                    <td>
-                        <div class="d-inline-block waiting p-1">
-                            <img src="images/waiting.svg" alt="Ожидание">
-                            <span>Ожидание пользов.</span>
-                        </div>
-                    </td>
-                    <td>Александр Долгов</td>
-                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td>
-                        <div>
-                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                        </div>
-                    </td>
-                    <td class="danger-time">Просрочена</td>
-                    <td>
-                        <div class="d-flex justify-content-end align-items-center pe-5">
-                            <img src="images/send.svg" alt="Отправить">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>20.09.2019</td>
-                    <td>15754</td>
-                    <td>Поддержка пользователей</td>
-                    <td>
-                        <div class="d-inline-block working p-1">
-                            <img src="images/working.svg" alt="Ожидание">
-                            <span>В работе</span>
-                        </div>
-                    </td>
-                    <td>Александр Долгов</td>
-                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td>
-                        <div>
-                            <svg class="me-2 point-green" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                        </div>
-                    </td>
-                    <td class="success-time">Выполнена в срок</td>
-                    <td>
-                        <div class="d-flex justify-content-end align-items-center pe-5">
-                            <img src="images/send.svg" alt="Отправить">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>20.09.2019</td>
-                    <td>15754</td>
-                    <td>Поддержка пользователей</td>
-                    <td>
-                        <div class="d-inline-block waiting p-1">
-                            <img src="images/waiting.svg" alt="Ожидание">
-                            <span>Ожидание пользов.</span>
-                        </div>
-                    </td>
-                    <td>Александр Долгов</td>
-                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td>
-                        <div>
-                            <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                        </div>
-                    </td>
-                    <td class="danger-time">Просрочена</td>
-                    <td>
-                        <div class="d-flex justify-content-end align-items-center pe-5">
-                            <img src="images/send.svg" alt="Отправить">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>20.09.2019</td>
-                    <td>15754</td>
-                    <td>Поддержка пользователей</td>
-                    <td>
-                        <div class="d-inline-block waiting p-1">
-                            <img src="images/waiting.svg" alt="Ожидание">
-                            <span>Зарегистрировано</span>
-                        </div>
-                    </td>
-                    <td>Александр Долгов</td>
-                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td>
-                        <div>
-                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                        </div>
-                    </td>
-                    <td>До 15.10.2019</td>
-                    <td>
-                        <div class="d-flex justify-content-end align-items-center pe-5">
-                            <img src="images/send.svg" alt="Отправить">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>20.09.2019</td>
-                    <td>15754</td>
-                    <td>Поддержка пользователей</td>
-                    <td>
-                        <div  class="d-inline-block yes-app p-1">
-                            <img src="images/yes.svg" alt="Ожидание">
-                            <span>Выполнено</span>
-                        </div>
-                    </td>
-                    <td>Александр Долгов</td>
-                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td>
-                        <div>
-                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                        </div>
-                    </td>
-                    <td>До 15.10.2019</td>
-                    <td>
-                        <div class="d-flex justify-content-end align-items-center pe-5">
-                            <img src="images/send.svg" alt="Отправить">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>20.09.2019</td>
-                    <td>15754</td>
-                    <td>Поддержка пользователей</td>
-                    <td>
-                        <div class="d-inline-block no-app p-1">
-                            <img src="images/no.svg" alt="Ожидание">
-                            <span>Отклонено</span>
-                        </div>
-                    </td>
-                    <td>Александр Долгов</td>
-                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td>
-                        <div>
-                            <svg class="me-2 point-green" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                        </div>
-                    </td>
-                    <td class="">До 15.10.2019</td>
-                    <td>
-                        <div class="d-flex justify-content-end align-items-center pe-5">
-                            <img src="images/send.svg" alt="Отправить">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>20.09.2019</td>
-                    <td>15754</td>
-                    <td>Поддержка пользователей</td>
-                    <td>
-                        <div class="d-inline-block waiting p-1">
-                            <img src="images/waiting.svg" alt="Ожидание">
-                            <span>Ожидание внешних</span>
-                        </div>
-                    </td>
-                    <td>Александр Долгов</td>
-                    <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
-                    <td>
-                        <div>
-                            <svg class="me-2 point-green" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="4"/>
-                            </svg>
-                        </div>
-                    </td>
-                    <td class="">До 15.10.2019</td>
-                    <td>
-                        <div class="d-flex justify-content-end align-items-center pe-5">
-                            <img src="images/send.svg" alt="Отправить">
-                        </div>
-                    </td>
-                </tr>
-                </tbody>
             </table>
+            <div class="scroll-table-body">
+                <table class="table-tbody">
+                    <tbody>
+                    <tr>
+                        <td class="col-date">20.09.2019</td>
+                        <td class="col-num">15754</td>
+                        <td class="col-service">Поддержка пользователей</td>
+                        <td class="col-status">
+                            <div class="d-inline-block waiting p-1">
+                                <img src="images/waiting.svg" alt="Ожидание">
+                                <span>Ожидание пользов.</span>
+                            </div>
+                        </td>
+                        <td class="col-author">Александр Долгов</td>
+                        <td class="description col-desk">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                        <td class="col-emer">
+                            <div>
+                                <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                            </div>
+                        </td>
+                        <td class="danger-time col-time">Просрочена</td>
+                        <td class="col-send">
+                            <div class="d-flex justify-content-end align-items-center pe-5">
+                                <img src="images/send.svg" alt="Отправить">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20.09.2019</td>
+                        <td>15754</td>
+                        <td>Поддержка пользователей</td>
+                        <td>
+                            <div class="d-inline-block working p-1">
+                                <img src="images/working.svg" alt="Ожидание">
+                                <span>В работе</span>
+                            </div>
+                        </td>
+                        <td>Александр Долгов</td>
+                        <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                        <td>
+                            <div>
+                                <svg class="me-2 point-green" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                            </div>
+                        </td>
+                        <td class="success-time">Выполнена в срок</td>
+                        <td>
+                            <div class="d-flex justify-content-end align-items-center pe-5">
+                                <img src="images/send.svg" alt="Отправить">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20.09.2019</td>
+                        <td>15754</td>
+                        <td>Поддержка пользователей</td>
+                        <td>
+                            <div class="d-inline-block waiting p-1">
+                                <img src="images/waiting.svg" alt="Ожидание">
+                                <span>Ожидание пользов.</span>
+                            </div>
+                        </td>
+                        <td>Александр Долгов</td>
+                        <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                        <td>
+                            <div>
+                                <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                            </div>
+                        </td>
+                        <td class="danger-time">Просрочена</td>
+                        <td>
+                            <div class="d-flex justify-content-end align-items-center pe-5">
+                                <img src="images/send.svg" alt="Отправить">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-date">20.09.2019</td>
+                        <td class="col-num">15754</td>
+                        <td class="col-service">Поддержка пользователей</td>
+                        <td class="col-status">
+                            <div class="d-inline-block waiting p-1">
+                                <img src="images/waiting.svg" alt="Ожидание">
+                                <span>Ожидание пользов.</span>
+                            </div>
+                        </td>
+                        <td class="col-author">Александр Долгов</td>
+                        <td class="description col-desk">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                        <td class="col-emer">
+                            <div>
+                                <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                            </div>
+                        </td>
+                        <td class="danger-time col-time">Просрочена</td>
+                        <td class="col-send">
+                            <div class="d-flex justify-content-end align-items-center pe-5">
+                                <img src="images/send.svg" alt="Отправить">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20.09.2019</td>
+                        <td>15754</td>
+                        <td>Поддержка пользователей</td>
+                        <td>
+                            <div class="d-inline-block working p-1">
+                                <img src="images/working.svg" alt="Ожидание">
+                                <span>В работе</span>
+                            </div>
+                        </td>
+                        <td>Александр Долгов</td>
+                        <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                        <td>
+                            <div>
+                                <svg class="me-2 point-green" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                            </div>
+                        </td>
+                        <td class="success-time">Выполнена в срок</td>
+                        <td>
+                            <div class="d-flex justify-content-end align-items-center pe-5">
+                                <img src="images/send.svg" alt="Отправить">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20.09.2019</td>
+                        <td>15754</td>
+                        <td>Поддержка пользователей</td>
+                        <td>
+                            <div class="d-inline-block waiting p-1">
+                                <img src="images/waiting.svg" alt="Ожидание">
+                                <span>Ожидание пользов.</span>
+                            </div>
+                        </td>
+                        <td>Александр Долгов</td>
+                        <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                        <td>
+                            <div>
+                                <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-red" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                            </div>
+                        </td>
+                        <td class="danger-time">Просрочена</td>
+                        <td>
+                            <div class="d-flex justify-content-end align-items-center pe-5">
+                                <img src="images/send.svg" alt="Отправить">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20.09.2019</td>
+                        <td>15754</td>
+                        <td>Поддержка пользователей</td>
+                        <td>
+                            <div class="d-inline-block waiting p-1">
+                                <img src="images/waiting.svg" alt="Ожидание">
+                                <span>Зарегистрировано</span>
+                            </div>
+                        </td>
+                        <td>Александр Долгов</td>
+                        <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                        <td>
+                            <div>
+                                <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                            </div>
+                        </td>
+                        <td>До 15.10.2019</td>
+                        <td>
+                            <div class="d-flex justify-content-end align-items-center pe-5">
+                                <img src="images/send.svg" alt="Отправить">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20.09.2019</td>
+                        <td>15754</td>
+                        <td>Поддержка пользователей</td>
+                        <td>
+                            <div  class="d-inline-block yes-app p-1">
+                                <img src="images/yes.svg" alt="Ожидание">
+                                <span>Выполнено</span>
+                            </div>
+                        </td>
+                        <td>Александр Долгов</td>
+                        <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                        <td>
+                            <div>
+                                <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point-orange" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                            </div>
+                        </td>
+                        <td>До 15.10.2019</td>
+                        <td>
+                            <div class="d-flex justify-content-end align-items-center pe-5">
+                                <img src="images/send.svg" alt="Отправить">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20.09.2019</td>
+                        <td>15754</td>
+                        <td>Поддержка пользователей</td>
+                        <td>
+                            <div class="d-inline-block no-app p-1">
+                                <img src="images/no.svg" alt="Ожидание">
+                                <span>Отклонено</span>
+                            </div>
+                        </td>
+                        <td>Александр Долгов</td>
+                        <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                        <td>
+                            <div>
+                                <svg class="me-2 point-green" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                            </div>
+                        </td>
+                        <td class="">До 15.10.2019</td>
+                        <td>
+                            <div class="d-flex justify-content-end align-items-center pe-5">
+                                <img src="images/send.svg" alt="Отправить">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20.09.2019</td>
+                        <td>15754</td>
+                        <td>Поддержка пользователей</td>
+                        <td>
+                            <div class="d-inline-block waiting p-1">
+                                <img src="images/waiting.svg" alt="Ожидание">
+                                <span>Ожидание внешних</span>
+                            </div>
+                        </td>
+                        <td>Александр Долгов</td>
+                        <td class="description">В связи с потерей плавности работы во время использования сервиса Figma прошу увеличить объем оперативной памяти.</td>
+                        <td>
+                            <div>
+                                <svg class="me-2 point-green" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                                <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="4" cy="4" r="4"/>
+                                </svg>
+                            </div>
+                        </td>
+                        <td class="">До 15.10.2019</td>
+                        <td>
+                            <div class="d-flex justify-content-end align-items-center pe-5">
+                                <img src="images/send.svg" alt="Отправить">
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
     <footer class="d-flex justify-content-between align-items-center">
