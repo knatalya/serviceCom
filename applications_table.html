@@ -461,21 +461,92 @@
     </footer>
     <div id="openModalView" class="modal-bg">
         <div class="modal-view">
-            <a href="#close" title="Close" class="close">×</a>
-<!--            <div class="">-->
-<!--                <h2>Тема обращения</h2>-->
-<!--                <div></div>-->
-<!--                <h5>Описание</h5>-->
-<!--                <p></p>-->
-
-<!--            </div>-->
-<!--            <div class="">-->
-
-<!--                <h5>Автор</h5>-->
-<!--                <h5>Услуга</h5>-->
-<!--                <h5>Срочность</h5>-->
-<!--                <h5>Срок</h5>-->
-<!--            </div>-->
+            <div class="block-1 d-flex flex-column">
+                <div>
+                    <h2 class="fw-bold">Тема обращения</h2>
+                </div>
+                <div>
+                    <div class="d-inline-block working p-1">
+                        <img src="images/working.svg" alt="Ожидание">
+                        <span>В работе</span>
+                    </div>
+                </div>
+                <div>
+                    <h5>Описание:</h5>
+                    <p class="mt-3">Не так давно стала наблюдаться проблема. Спустя какое-то время после начала работы работа с комьютером теряет плановость. Интрефейсы как бы “дергаются”. Загрузка приложения происходит как бы не сразу. То есть раньше было быстрее. Несколько раз компьютер зависал и его приходилось перезагружать.</p>
+                </div>
+                <div>
+                    <div class="header-message">
+                        <h5>Сообщения:</h5>
+                        <div>
+                            <img src="images/start-new.svg" alt="Сначала новые">
+                            <span class="ms-1">Сначала новые</span>
+                        </div>
+                    </div>
+                    <div class="body-message">
+                        <div>
+                            <p>Оператор №0048 (10.11.2019 10:48:06)</p>
+                        </div>
+                    </div>
+                    <form action="" class="footer-message w-100 d-flex flex-row">
+                        <input type="text" placeholder="Напишите сообщение">
+                        <button type="button" class="btn">
+                            <img src="images/attach.svg" alt="Прикрепить файл">
+                        </button>
+                        <button type="button" class="btn btn-info">
+                            <img src="images/message.svg" alt="Отправить сообщение">
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="block-2">
+                <div>
+                    <a href="#close" title="Close" class="close text-end">
+                        <p>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.192 0.344238L5.94897 4.58624L1.70697 0.344238L0.292969 1.75824L4.53497 6.00024L0.292969 10.2422L1.70697 11.6562L5.94897 7.41424L10.192 11.6562L11.606 10.2422L7.36397 6.00024L11.606 1.75824L10.192 0.344238Z" fill="#A5ADBA"/>
+                            </svg>
+                        </p>
+                    </a>
+                    <div>
+                        <h5 class="fw-bold">Автор:</h5>
+                        <p>Александр Долгов</p>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold">Услуга:</h5>
+                        <p>Сопровождение стандартного ПО</p>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold">Срочность:</h5>
+                        <div>
+                            <svg class="me-2 point-green" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="me-2 point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                            <svg class="point" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="4" cy="4" r="4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold">Срок:</h5>
+                        <p>До 15.10.2019</p>
+                    </div>
+                    <button type="button" class="btn btn-info color-white mt-3">Закрыть заявку</button>
+                </div>
+                <div class="date">
+                    <p class="text-muted m-0">Дата создания: 20.09.2019</p>
+                    <p class="text-muted mt-2">Дата обновления: 20.09.2019</p>
+                </div>
+            </div>
         </div>
     </div>
 
