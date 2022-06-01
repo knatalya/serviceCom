@@ -198,6 +198,7 @@ h4, h6 {
 }
 .col-desk {
   width: toRem(528);
+  cursor: pointer;
 }
 .col-emer {
   width: toRem(150);
@@ -248,4 +249,54 @@ h4, h6 {
 }
 .point {
   fill: #C1C7D0;
+}
+.modal-bg {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(42, 42, 47, 0.3);
+}
+.modal-bg:target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-view {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 1180px;
+  height: 697px;
+  transition: opacity 200ms ease-in;
+  pointer-events: none;
+}
+.modal-dialog {
+  position: relative;
+  margin: 0;
+  display: flex;
+}
+.close {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  text-decoration: none;
+}
+.block-2 {
+  width: 300px;
+}
+.block-1 {
+  width: 397px;
+}
+
+.close:focus, .close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
