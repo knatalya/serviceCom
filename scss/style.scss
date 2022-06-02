@@ -352,6 +352,8 @@ h4, h6 {
     border-radius: 8px;
     width: 646px;
     padding: 10px 16px;
+    color: #050815;
+    font-family: "GolosTextWebRegular", sans-serif !important;;
   }
   input::placeholder {
     color: #6B778C;
@@ -384,4 +386,10 @@ h4, h6 {
       }
     }
   }
+}
+.attach {
+  fill: #A5ADBA;
+}
+.attach:hover {
+  fill: #00CC66;
 }
