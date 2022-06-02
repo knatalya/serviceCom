@@ -343,19 +343,20 @@ h4, h6 {
 }
 .block-3 {
   width: 1116px;
+
   textarea {
     background: #FFFFFF;
     border: 1px solid #BBC5C9;
     border-radius: 8px;
     padding: 16px;
-    height: 253px;
+    height: 280px;
   }
   input {
     background: #FFFFFF;
     border: 1px solid #BBC5C9;
     border-radius: 8px;
     width: 820px;
-    padding: 10px 16px;
+    padding: 12px 16px;
     color: #050815;
     font-family: "GolosTextWebRegular", sans-serif !important;;
   }
@@ -365,12 +366,25 @@ h4, h6 {
   a:hover {
     color: #050815;
   }
+  .close-link:hover {
+    color: #009E4F !important;
+  }
+  a.attach-file {
+    position: absolute;
+    bottom: 290px;
+    left: 415px;
+    z-index: 1050;
+  }
   .attach-file svg {
       fill: #A5ADBA;
   }
   .attach-file:hover svg {
     fill: #00c261;
   }
+  label {
+    color: #050815;
+  }
+
 }
 .block-3 > p {
   color: #6B778C;
@@ -454,7 +468,4 @@ h4, h6 {
   margin-left: 3rem;
   text-decoration: none;
   font-family: "GolosTextWebRegular", sans-serif;
-}
-.close-link:hover {
-  color: #009E4F;
 }
