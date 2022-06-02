@@ -351,11 +351,11 @@ h4, h6 {
     padding: 16px;
     height: 280px;
   }
-  input {
+  input[type="text"] {
     background: #FFFFFF;
     border: 1px solid #BBC5C9;
     border-radius: 8px;
-    width: 820px;
+    width: 910px;
     padding: 12px 16px;
     color: #050815;
     font-family: "GolosTextWebRegular", sans-serif !important;;
@@ -374,6 +374,7 @@ h4, h6 {
     bottom: 290px;
     left: 415px;
     z-index: 1050;
+    cursor: pointer;
   }
   .attach-file svg {
       fill: #A5ADBA;
